@@ -36,13 +36,14 @@ header {
 .mid-section {
     display: flex;
     align-items: center;
+    width: 35.4%;
     margin-left: -9%;
 }
 
 .mid-section form {
     display: flex;
     height: 40px;
-    width: 628px;
+    width: 92%;
 }
 
 .mid-section input {
@@ -102,7 +103,6 @@ header {
     height: calc(100vh - 56px);
     background-color: #f9f9f9;
     display: flex;
-
 }
 
 aside {
@@ -255,9 +255,55 @@ main {
     color: black;
 }
 
+@media (max-width: 1312px) {
+/*small side bar*/
+
+    aside {
+        width: 75px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+        margin: 0;
+        
+    }
+
+    .nav-link span {
+        margin-left: 0px;
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 15px 0;
+        padding-right: 0;
+    }
+
+    aside hr {
+        display: none;
+    }
+
+    .disapear {
+        display: none;
+    }
 
 
+}
 
+@media (max-width: 792px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .search, .disapear2 {
+        display: none;
+    }
+}
 
 
 
